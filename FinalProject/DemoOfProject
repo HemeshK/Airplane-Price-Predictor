@@ -1,0 +1,143 @@
+Last login: Wed Mar 26 22:01:29 on ttys000
+hemeshkukreja@Hemeshs-MacBook-Pro FinalProject % pwd
+/Users/hemeshkukreja/Desktop/FinalProject
+hemeshkukreja@Hemeshs-MacBook-Pro FinalProject % python3 main.py
+First 5 rows of the dataset:
+                     Model Name Engine Type  ... Range N.M.      Price
+0  100 Darter (S.L. Industries)      Piston  ...        370  1300000.0
+1                   7 CCM Champ      Piston  ...        190  1230000.0
+2  100 Darter (S.L. Industries)      Piston  ...        210  1600000.0
+3                    7 AC Champ      Piston  ...        210  1300000.0
+4  100 Darter (S.L. Industries)      Piston  ...        175  1250000.0
+
+[5 rows x 16 columns]
+
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 517 entries, 0 to 516
+Data columns (total 16 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   Model Name               517 non-null    object 
+ 1   Engine Type              517 non-null    object 
+ 2   HP or lbs thr ea engine  517 non-null    object 
+ 3   Max speed Knots          497 non-null    object 
+ 4   Rcmnd cruise Knots       507 non-null    float64
+ 5   Stall Knots dirty        502 non-null    float64
+ 6   Fuel gal/lbs             517 non-null    int64  
+ 7   All eng rate of climb    513 non-null    object 
+ 8   Eng out rate of climb    491 non-null    float64
+ 9   Takeoff over 50ft        492 non-null    float64
+ 10  Landing over 50ft        517 non-null    object 
+ 11  Empty weight lbs         516 non-null    object 
+ 12  Length ft/in             517 non-null    object 
+ 13  Wing span ft/in          517 non-null    object 
+ 14  Range N.M.               499 non-null    object 
+ 15  Price                    507 non-null    float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 64.8+ KB
+
+Missing Values:
+Model Name                  0
+Engine Type                 0
+HP or lbs thr ea engine     0
+Max speed Knots            20
+Rcmnd cruise Knots         10
+Stall Knots dirty          15
+Fuel gal/lbs                0
+All eng rate of climb       4
+Eng out rate of climb      26
+Takeoff over 50ft          25
+Landing over 50ft           0
+Empty weight lbs            1
+Length ft/in                0
+Wing span ft/in             0
+Range N.M.                 18
+Price                      10
+dtype: int64
+
+Model Evaluation:
+Test R² Score: 0.9107
+Test MSE: 83275301237.4815
+Cross-validation Mean R² Score: 0.7904
+Cross-validation Std Dev: 0.1187
+
+--- Enter New Airplane Details ---
+Enter Rcmnd cruise Knots: ^CTraceback (most recent call last):
+  File "/Users/hemeshkukreja/Desktop/FinalProject/main.py", line 156, in <module>
+    predict_new_airplane()
+  File "/Users/hemeshkukreja/Desktop/FinalProject/main.py", line 136, in predict_new_airplane
+    value = float(input(f"Enter {feature}: "))
+KeyboardInterrupt
+
+hemeshkukreja@Hemeshs-MacBook-Pro FinalProject % python3 main.py
+First 5 rows of the dataset:
+                     Model Name Engine Type  ... Range N.M.      Price
+0  100 Darter (S.L. Industries)      Piston  ...        370  1300000.0
+1                   7 CCM Champ      Piston  ...        190  1230000.0
+2  100 Darter (S.L. Industries)      Piston  ...        210  1600000.0
+3                    7 AC Champ      Piston  ...        210  1300000.0
+4  100 Darter (S.L. Industries)      Piston  ...        175  1250000.0
+
+[5 rows x 16 columns]
+
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 517 entries, 0 to 516
+Data columns (total 16 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   Model Name               517 non-null    object 
+ 1   Engine Type              517 non-null    object 
+ 2   HP or lbs thr ea engine  517 non-null    object 
+ 3   Max speed Knots          497 non-null    object 
+ 4   Rcmnd cruise Knots       507 non-null    float64
+ 5   Stall Knots dirty        502 non-null    float64
+ 6   Fuel gal/lbs             517 non-null    int64  
+ 7   All eng rate of climb    513 non-null    object 
+ 8   Eng out rate of climb    491 non-null    float64
+ 9   Takeoff over 50ft        492 non-null    float64
+ 10  Landing over 50ft        517 non-null    object 
+ 11  Empty weight lbs         516 non-null    object 
+ 12  Length ft/in             517 non-null    object 
+ 13  Wing span ft/in          517 non-null    object 
+ 14  Range N.M.               499 non-null    object 
+ 15  Price                    507 non-null    float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 64.8+ KB
+
+Missing Values:
+Model Name                  0
+Engine Type                 0
+HP or lbs thr ea engine     0
+Max speed Knots            20
+Rcmnd cruise Knots         10
+Stall Knots dirty          15
+Fuel gal/lbs                0
+All eng rate of climb       4
+Eng out rate of climb      26
+Takeoff over 50ft          25
+Landing over 50ft           0
+Empty weight lbs            1
+Length ft/in                0
+Wing span ft/in             0
+Range N.M.                 18
+Price                      10
+dtype: int64
+
+Model Evaluation:
+Test R² Score: 0.9107
+Test MSE: 83275301237.4815
+Cross-validation Mean R² Score: 0.7904
+Cross-validation Std Dev: 0.1187
+
+--- Enter New Airplane Details ---
+Enter Rcmnd cruise Knots: 105
+Enter Stall Knots dirty: 43
+Enter Fuel gal/lbs: 80
+Enter Eng out rate of climb: 1050
+Enter Takeoff over 50ft: 800
+Enter Engine Type: Piston
+
+Predicted Airplane Price: $1387400.00
+hemeshkukreja@Hemeshs-MacBook-Pro FinalProject % 
