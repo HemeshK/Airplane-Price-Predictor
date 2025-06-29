@@ -14,14 +14,22 @@ Trained regression model (Random Forest Regressor) with cross-validation
 Modular codebase for easy expansion and deployment
 Tech Stack
 
-Category	Tools and Libraries
+Category	Tools and Libraries:
+
 Programming Language-	Python
+
 Data Handling-	pandas, numpy
+
 Visualization-	matplotlib, seaborn
+
 Machine Learning-	scikit-learn
+
 Preprocessing-	MinMaxScaler, OneHotEncoder, Pipelines
+
 Web Framework-	Streamlit
+
 Model Used-	Random Forest Regressor
+
 
 
 How It Works-
